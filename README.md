@@ -10,7 +10,7 @@ Adds a udev rule for Flipper Zero U2F security key so that Firefox installed as 
 # Backup your existing udev rule
 cp /etc/udev/rules.d/70-snap.firefox.rules ~/70-snap.firefox.rules.bak
 
-# Script with elevate for password if not running as root
+# Script will ask for password if not running as root
 ./add-flipper-u2f-udev-rule.bash
 
 # Reload AppArmor
