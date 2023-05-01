@@ -21,3 +21,12 @@ sudo snap connect firefox:u2f-devices
 ```
 
 You may need to unplug and plug in your Flipper Zero and restart Firefox before it is recognized.
+
+Optionally, add to crontab run snap connect on reboot.
+
+```shell
+sudo crontab -e
+
+# Add inside crontab editor and save
+@reboot /usr/bin/snap connect firefox:u2f-devices
+```
